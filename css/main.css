@@ -1,0 +1,10 @@
+body{
+	margin: 20px;
+}
+
+#query{
+	width :500px;
+}
+ul{
+    list-style-type: none;
+}
