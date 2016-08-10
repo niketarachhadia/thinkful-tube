@@ -22,7 +22,9 @@ var getRequest = function(searchTerm){
 };
 var showResults = function(results){
 	$.each(results,function(key,value){
-		$('#search-result').append('<li>'+'<img src="'+ results[key].snippet.thumbnails.medium.url+'"/> </li>');
-		//console.logresults[key].Title);
+		//var li = var li=$('<li id="'+key+'"></li>');
+
+		$('#search-result').append('<li id="'+key+'"><a href="https://www.youtube.com/watch?v='+results[key].id.videoId+'"><img src="'+ results[key].snippet.thumbnails.medium.url+'"/></a></li>');
+		//console.log(results[key].Title);
 	});
 };
